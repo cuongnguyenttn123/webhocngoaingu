@@ -1,0 +1,25 @@
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security: DEBUG
+#      hibernate:
+#        SQL: DEBUG
+
+server:
+  port: 8083
+
+jdbc:
+  jdbcUrl: jdbc:mysql://localhost:3306/dbwebthuctap?useSSL=false
+  username: root
+  password: 980137
+  driverClassName: com.mysql.jdbc.Driver
+  connectionTimeout: 30000
+  idleTimeout: 600000
+  maxPoolSize: -1
+
+
+spring:
+  jpa:
+    show-sql: true
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
